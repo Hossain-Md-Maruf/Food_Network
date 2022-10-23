@@ -2,10 +2,27 @@
 {
     color: orange;
 }
+.flex-direction
+{
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+.food
+{
+    text-align: center;
+}
+.healthy-info
+{
+    margin-left: 15px;
+}
+.food-items
+{
+    margin-top:50px;
+}
 .responsive-layout
 {
     display: flex;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
     
 }
 .half-width
@@ -19,6 +36,15 @@
     width: 80%;
     border-radius: 75%;
     box-shadow: 10px 10px 40px black;
+}
+.food-header
+{
+    margin: 0;
+    padding-top: 10px;
+}
+.food-info
+{
+    margin:0;
 }
 body
 {
@@ -42,18 +68,14 @@ body
 }
 .back-ground
 {
-    background-image: url(../images/back_ground.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: lightcoral;
+    margin-bottom: 0;
 }
 #about
 {
     margin-top: 15%;
 }
-#food-title
-{
-    text-align: center;
-}
+
 .healthy-food img
 {
     width: 100%;
@@ -86,10 +108,7 @@ h4
 }
 .back-pink
 {
-    background-image: url(../images/pink.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-bottom: 15px;
+    background-color: rgb(246, 222, 226);
 }
 
 .whole-card
@@ -99,7 +118,7 @@ h4
     padding-right: 5%;
     box-shadow: 10px 10px 70px rgb(180, 119, 27);
     border-image: linear-gradient(white, tomato);
-    border-top: 7px solid;
+    border-left: 7px solid;
     border-image-slice: 1;
     border-radius: 5px;
 }
@@ -122,4 +141,77 @@ h4
 {
     text-align: center;
     color:rgb(38, 73, 38);
+}
+
+/* Responsiveness for Mobile screen */
+@media only screen and (max-width: 668px) {
+    .flex-direction
+    {
+        flex-direction:column;
+        width: 700px;
+    }
+   .half-width
+   {
+    margin-left: 35%;
+    padding-bottom: 15px;
+   }
+   #menu
+   {
+    margin-left: 75%;
+   }
+   #branch
+   {
+    margin-left: 75%;
+    font-size: 40px;
+   }
+   .food-items
+   {
+    width: 700px;
+   }
+   .food-title
+   {
+    margin-top: 35px;
+    margin-left: 15%;
+    padding-top: 10px;
+   }
+   .food-info
+   {
+    width: 400px;
+   }
+   .responsive-layout
+   {
+    align-items: center;
+   }
+   .whole-card
+   {
+    width: 650px;
+   }
+   .margin
+{
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+#uttra
+{
+    margin-top: -35%;
+}
+#mirpur
+{
+    margin-top: -25%;
+}
+footer
+{
+    width: 700px;
+}
+
+}
+/* Responsive for Tablet screen */
+@media only screen and (min-width:669px) and (max-width:992px) {
+    .resize
+    {
+        padding: 10px 0;
+    }
+  
 }
